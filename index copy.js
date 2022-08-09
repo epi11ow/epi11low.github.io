@@ -45,7 +45,7 @@ function delatelist() {
     alert("削除が完了しました")
 }
 
-function loadlist() {
+/* function loadlist() {
     let todotext = JSON.parse(localStorage.getItem("todos"))
     //繰り返す回数をtimesで定義する
     let times = localStorage.getItem("name")
@@ -55,8 +55,17 @@ function loadlist() {
         li.classList.add("list-group-item")
         ul.appendChild(li)
     }
-}
+} */
 
+let todotext = JSON.parse(localStorage.getItem("todos"))
+//繰り返す回数をtimesで定義する
+let times = localStorage.getItem("name")
+for (var item of todotext) {
+    let li = document.createElement("li")
+    li.innerText = item
+    li.classList.add("list-group-item")
+    ul.appendChild(li)
+}
 
 
 
