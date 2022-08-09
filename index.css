@@ -2,24 +2,33 @@
 
 h1 {
     color: lightblue;
-    font-size: 5.85vw;
+    font-size: 15vw;
     font-family: 'Itim', cursive;
 }
 
 p {
     color: rgb(86, 74, 74);
-    font-size: 1.56vw;
+    font-size: 2vw;
     font-family: "Nico Moji";
 }
 
 h6 {
     color: darkslategrey;
-    font-size: 1.56vw;
+    font-size: 2vw;
     font-family: "Nico Moji";
 }
 
 h2 {
-    color: black;
-    font-size: 3.9vw;
+    color: rgb(29, 173, 125);
+    font-size: 3.5vw;
     font-family: "Nico Moji";
+}
+
+button {
+    font-family: "Nico Moji";
+    font-size: 2vw;
+}
+
+form {
+    font-size: 3vw;
 }
