@@ -32,3 +32,12 @@ button {
 form {
     font-size: 3vw;
 }
+
+form {
+    font-family: "Nico Moji";
+    width: auto;
+}
+
+ul {
+    font-family: "Nico Moji";
+}
