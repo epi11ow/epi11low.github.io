@@ -1,11 +1,18 @@
 let input = document.getElementById("input")
 let form = document.getElementById("form")
 let li = document.getElementById("li")
+let delateform = document.getElementById("delateform")
+let delateinput = document.getElementById("delateinput")
 
 form.addEventListener("submit", (event) => {
     console.log(input.value)
     event.preventDefault()
     functionsubmit()
+})
+
+delateform.addEventListener("submit",  (event) => {
+    event.preventDefault()
+    delate()
 })
 
 function functionsubmit() {
@@ -43,19 +50,8 @@ function delatelist() {
     localStorage.removeItem("todos")
     localStorage.removeItem("name")
     alert("削除が完了しました")
+    location.reload()
 }
-
-/* function loadlist() {
-    let todotext = JSON.parse(localStorage.getItem("todos"))
-    //繰り返す回数をtimesで定義する
-    let times = localStorage.getItem("name")
-    for (var item of todotext) {
-        let li = document.createElement("li")
-        li.innerText = item
-        li.classList.add("list-group-item")
-        ul.appendChild(li)
-    }
-} */
 
 let todotext = JSON.parse(localStorage.getItem("todos"))
 //繰り返す回数をtimesで定義する
@@ -67,6 +63,12 @@ for (var item of todotext) {
     ul.appendChild(li)
 }
 
-
-
-
+function delate () {
+    let todotext = JSON.parse(localStorage.getItem("todos"))
+    //Number で文字型を数字にする
+    let inputafter = (Number(delateinput.value) - 1)
+    alert(delateinput.value + "番目の項目を削除します")
+    todotext.splice(inputafter, 1)
+    localStorage.setItem("todos", JSON.stringify(todotext))
+    location.reload()
+}
