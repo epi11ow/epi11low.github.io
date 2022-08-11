@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 h1 {
     color: lightblue;
     font-size: 15vw;
@@ -15,13 +17,13 @@ p {
 h6 {
     color: darkslategrey;
     font-size: 2vw;
-    font-family: "Nico Moji";
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 h2 {
     color: rgb(29, 173, 125);
     font-size: 3.5vw;
-    font-family: "Nico Moji";
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 button {
@@ -34,10 +36,10 @@ form {
 }
 
 form {
-    font-family: "Nico Moji";
+    font-family: 'Yusei Magic', sans-serif;
     width: auto;
 }
 
 ul {
-    font-family: "Nico Moji";
+    font-family: 'Yusei Magic', sans-serif;
 }
