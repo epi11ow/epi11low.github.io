@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
     functionsubmit()
 })
 
-delateform.addEventListener("submit",  (event) => {
+delateform.addEventListener("submit", (event) => {
     event.preventDefault()
     delate()
 })
@@ -47,10 +47,14 @@ function functionsubmit() {
 }
 
 function delatelist() {
-    localStorage.removeItem("todos")
-    localStorage.removeItem("name")
-    alert("削除が完了しました")
-    location.reload()
+    if (confirm("すべて削除してもよろしいですか？")) {
+        localStorage.removeItem("todos")
+        localStorage.removeItem("name")
+        alert("削除が完了しました")
+        location.reload()
+    } else {
+        alert("削除をキャンセルしました")
+    }
 }
 
 let todotext = JSON.parse(localStorage.getItem("todos"))
@@ -63,7 +67,7 @@ for (var item of todotext) {
     ul.appendChild(li)
 }
 
-function delate () {
+function delate() {
     let todotext = JSON.parse(localStorage.getItem("todos"))
     //Number で文字型を数字にする
     let inputafter = (Number(delateinput.value) - 1)
