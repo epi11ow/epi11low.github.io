@@ -22,7 +22,8 @@
     </form>
     <ul class="list-group" id="ul"></ul>
     <form id="delateform" class="text-center">
-      <input type="text" id="delateinput" placeholder="削除したい項目の番号を入力" autocomplete="off" class="formcontrol">
+      <input style="margin: auto; width: 50vw" id="delateinput" placeholder="削除したい項目の番号を入力（数字）" autocomplete="off"
+        class="formcontrol">
     </form>
   </div>
   <script src="index copy.js"></script>
@@ -31,6 +32,28 @@
 <button class="text-center btn btn-outline-secondary" type="button" onclick="delatelist()">すべて削除</button>
 <h6 class="text-center">みためはぼちぼちかいりょうしていきます</h6>
 <p class="text-center">js,css,htmlのべんきょうとしてtodoリストをつくってみました</p>
-<p class="text-center">”すべて削除”をおすとほぞんしているないようをすべてさくじょできます</p>
 
 </html>
+
+<div class="hidden_box">
+  <label for="label1" class="text-center btn btn-outline-secondary">クリックしてパッチノートを表示</label>
+  <input type="checkbox" id="label1" />
+  <div class="hidden_show">
+    <pre class="text-center">
+      〜パッチノート〜
+      ・ver 1.0
+      それぞれの項目に番号をつけ、一つ一つ消しやすいように変更
+      パッチノートを表示させるように変更
+
+      ＜実装済みの機能＞
+      項目がリスト表示される
+      一つずつ消せる
+      全てまとめて消せる
+      オートセーブ、オートロード機能付き
+
+      ＜次の更新で実装する予定の機能＞
+      それぞれの項目に期限をつけられるようにする
+      期限の日になったら項目の文字を赤くする
+    </pre>
+  </div>
+</div>
