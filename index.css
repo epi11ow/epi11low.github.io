@@ -8,6 +8,11 @@ h1 {
     font-family: 'Itim', cursive;
 }
 
+a {
+    font-size: 10vw;
+    font-family: 'Itim', cursive;
+}
+    
 p {
     color: rgb(86, 74, 74);
     font-size: 2vw;
